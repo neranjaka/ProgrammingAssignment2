@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-  inv <- NULL           #inverse is assigned null
+  inv <<- NULL           #inverse is assigned null
   set <- function(y) {   #the function to set the matrix
     x <<- y              # the matrix y is chached in variable x
     inv <<- NULL
