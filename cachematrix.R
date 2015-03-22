@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-  inv <<- NULL           #inverse is assigned null
+  inv <- NULL           #inverse is assigned null
   set <- function(y) {   #the function to set the matrix
     x <<- y              # the matrix y is chached in variable x
     inv <<- NULL
@@ -31,7 +31,7 @@ cacheSolve <- function(x, ...) {
     return(inv)                       #returns the inverse
   }
   data <- x$get()                     #retrieves the matrix
-  inverse <- solve(data, ...)         #finds the inverse if it has not been found already
+  inv <- solve(data, ...)         #finds the inverse if it has not been found already
   x$setinverse(inv)                   #stores the inverse
   inv                                 #returns the inverse
   
